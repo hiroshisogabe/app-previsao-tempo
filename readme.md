@@ -26,7 +26,13 @@ Após clonar o projeto, é necessário executar o comando na pasta raiz:
 
 `composer install`
 
-Verifique que foi criado o arquivo .env; a API tem o uso gratuito, portanto além de configurar valores comuns em seu arquivo .env, por exemplo, o banco de dados, não se esqueça de verificar os valores para acessar a API, que possuem o prefixo “API_”.
+É preciso criar o arquivo .env que faremos executando o comando abaixo; a API tem o uso gratuito, portanto além de configurar valores comuns em seu arquivo .env, por exemplo, o banco de dados, não se esqueça de verificar os valores para acessar a API, que possuem o prefixo “API_”.
+
+`cp .env.example .env`
+
+O Laravel precisa que uma chave única seja gerada para o app, é possível gerá-la executando o comando:
+
+`php artisan key:generate`
 
 Para criar a tabela utilizada no nosso projeto, é preciso executar o comando: 
 
